@@ -4,9 +4,9 @@ import About from './About.jsx'
 export default function App() {
   return (
     <>
-      <header className='h-screen'>
-        <nav className='flex items-center justify-between px-14 pt-10'>
-          <div className='text-xl'>
+      <header className=''>
+        <nav className='flex items-center justify-between px-4 md:px-14 pt-6 md:pt-10'>
+          <div className='text-sm md:text-xl'>
             <a href="" className='font-semibold uppercase hover:text-slate-700
             '>
               Academie 
@@ -14,29 +14,29 @@ export default function App() {
               Salle
             </a>
           </div>
-          <div className='flex'>
-            <ul className='flex gap-x-8 font-semibold text-md cursor-pointer'>
+          <div className='hidden lg:flex'>
+            <ul className='flex gap-x-8 font-semibold text-md '>
               <li>
                 <a href="" className='hover:text-sky-500 leading-6'>Home</a>
               </li>
               <li>
-               <a href='/about.html' 
+               <a href="" 
                 className='hover:text-sky-500 leading-6'>About Us</a>
               </li>
               <li>
-               <a href="/academics.html" 
+               <a href="" 
                 className='hover:text-sky-500 leading-6'>Academics</a>
               </li>
               <li>
-               <a href="/admission.html" 
+               <a href="" 
                 className='hover:text-sky-500 leading-6'>Admission</a>
               </li>
               <li>
-               <a href="/gallery.html" 
+               <a href="" 
                 className='hover:text-sky-500 leading-6'>Gallery</a>
               </li>
               <li>
-               <a href="/contact.html" 
+               <a href="" 
                 className='hover:text-sky-500 leading-6'>Contact Us</a>
               </li>
               
@@ -69,21 +69,21 @@ export default function App() {
           </div>
         </nav>
 
-        <div className='hero flex flex-col justify-center items-center mx-auto pt-48'>
+        <div className='hero flex flex-col justify-center items-center mx-auto pt-32 md:pt-48 px-4 md:px-14'>
           <div>
-            <p className='mx-auto max-w-5xl font-display text-6xl font-medium tracking-tight text-slate-900 text-center'>
+            <p className='mx-auto max-w-5xl text-4xl md:text-6xl font-semibold tracking-tight text-slate-900 text-center'>
               Academie
               <span className='text-sky-400'> school of excellence </span>
               and values
             </p>
           </div>
-          <div>
-            <p className='mx-auto my-6 max-w-3xl text-xl tracking-tight text-slate-700 text-center'>
+          <div className='max-w-3xl'>
+            <p className='mx-auto my-6 text-2xl tracking-tight text-slate-700 text-center'>
             Welcome to place where learning transform lives. joins us in shaping a brighter future
             <span className='text-blue-400 font-semibold'> together.</span> 🖐️
             </p>
           </div>
-          <div className='flex gap-x-12 pt-14'>
+          <div className='flex gap-x-12 pt-20 md:pt-14'>
             <button>
             <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">Learn more 
               <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
@@ -93,8 +93,8 @@ export default function App() {
             </button>
 
             <button>
-            <a href="#" class="inline-flex gap-2 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 group group-hover:text-blue-700">
-              <svg class="w-6 h-6 text-gray-800  group-hover:text-blue-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <a href="#" class="inline-flex gap-2 items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700">
+              <svg class="w-6 h-6 text-gray-800 hover:text-blue-700 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V4M7 14H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-2m-1-5-4 5-4-5m9 8h.01"/>
                 </svg>
                 Babyeyi
@@ -105,9 +105,10 @@ export default function App() {
       </header>
       <main>
         {/* values */}
-        <section className='values px-14 pt-10'>
-          <div className='flex items-center gap-20'>
-            <div className='card px-4 py-10 mt-0 hover:translate-x-11'>
+        <section className='values px-5 md:px-12 lg:pt-10 py-40 '>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-10 items-center'>
+
+            <div className='card px-4 py-10 lg:mt-0 hover:translate-x-11'>
 
               <div class="text-5xl mb-1 mt-6">🚀</div>
               <h4 className='py-4 font-bold'>Be More Productive</h4>
@@ -116,7 +117,7 @@ export default function App() {
                 How to execute efficiently, amke time for what matters and have fun along the way.
               </p>
             </div>
-            <div className='card px-4 py-10 mt-28 hover:scale-x-50'>
+            <div className='card px-4 py-10 lg:mt-28 hover:scale-x-50'>
 
               <div class="text-5xl mb-1 mt-6">💡</div>
               <h4 className='py-4 font-bold'>Be More Productive</h4>
@@ -125,7 +126,7 @@ export default function App() {
                 How to execute efficiently, amke time for what matters and have fun along the way.
               </p>
             </div>
-            <div className='card px-4 py-10 mt-3  hover:translate-x-11'>
+            <div className='card px-4 py-10 lg:mt-3  hover:translate-x-11'>
 
               <div class="text-5xl mb-1 mt-6">📚</div>
               <h4 className='py-4 font-bold'>Be More Productive</h4>
@@ -134,7 +135,7 @@ export default function App() {
                 How to execute efficiently, amke time for what matters and have fun along the way.
               </p>
             </div>
-            <div className='card px-4 py-10 mt-56 hover:scale-x-50'>
+            <div className='card px-4 py-10 lg:mt-56 hover:scale-x-50'>
 
               <div class="text-5xl mb-1 mt-6">🗝️</div>
               <h4 className='py-4 font-bold'>Be More Productive</h4>
@@ -147,46 +148,46 @@ export default function App() {
 
         </section>
         {/* about */}
-        <section className='px-14 pt-10 pb-20'>
+        <section className='px-4 md:px-14  pb-20'>
           <div className='flex flex-col items-center   justify-center'>
               <p className='text-lg text-gray-500 '>
                 Unique
                 </p>
-              <h2 className='font-bold text-4xl w-1/2 text-center pt-4'>
+              <h2 className='font-bold text-4xl lg:w-1/2 text-center pt-4'>
                 More about Our home
               </h2>
               <p className='pt-4 text-center w-[70vw] text-balance text-slate-600 '>
               It's place where learning transform lives. joins us in shaping a brighter future together.
               </p>
-            </div>
-          <div className='flex pt-20 gap-x-16'>
-            <div className='w-1/2'>
+          </div>
+          <div className='flex  flex-col-reverse lg:flex-row pt-20 gap-x-16 gap-y-10'>
+            <div className='lg:w-1/2'>
               <p className='font-medium text-gray-700 leading-8 text-lg'>
               Academy De La Salle, founded by Saint Jean-Baptiste de La Salle and established by the La Sallian Brothers, is dedicated to fostering the values of Faith, Brotherhood, and Quality. Since its inception, the Academy has committed itself to nurturing students through a holistic approach that emphasizes spiritual growth, a sense of community, and educational excellence. By integrating these core values into its teaching and school culture, the Academy prepares students to excel both academically and personally, embodying the enduring principles and vision of its founder.
               </p>
             </div>
-            <div className='w-1/2'>
+            <div className='lg:w-1/2'>
               <img src="https://images.stockcake.com/public/5/7/5/5752206f-69c1-433f-95bf-645e7ece243c_large/colorful-science-lab-stockcake.jpg" alt=""  className='rounded-md'/>
             </div>
           </div>
         </section>
         {/* programs */}
-        <section className='px-14 pt-10 pb-20'>
+        <section className='px-4 md:px-14 pt-10 pb-20'>
           <div className='flex flex-col'>
             <div className='flex flex-col items-center justify-center'>
               <p className='text-lg text-gray-500 '>
                 Excellence
                 </p>
-              <h2 className='font-bold text-4xl w-1/2 text-center pt-4'>
+              <h2 className='font-bold text-4xl lg:w-1/2 text-center pt-4'>
                 Discover Our Unique Educational Programs
               </h2>
-              <p className='pt-4 text-center w-[70vw] text-balance text-slate-600 '>
+              <p className='pt-4 text-center lg:w-[70vw] md:text-balance text-slate-600 '>
                 Our school offers a variety of innovative programs designed to foster creativity and critical thinking. We are commited to nurturing well-rounded individuals who excel academically and socially.
               </p>
             </div>
             <div>
-            <div className='flex items-center gap-10 pt-20'>
-              <div className='p-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pt-20'>
+              <div className='py-4 md:px-4'>
                 <div className=''>
                   <img src="https://images.stockcake.com/public/b/6/b/b6b7e616-0483-4344-9fae-2f89e0ba3a4f_large/teddy-among-books-stockcake.jpg" alt="" className='rounded-lg h-[11.5rem] w-full' />
                 </div>
@@ -197,7 +198,7 @@ export default function App() {
                   <p className='text-center pt-2 text-md'>We actively participate in community services projects that enrich our student's learning experiences.</p>
                 </div>
               </div>
-              <div className='p-4'>
+              <div className='py-4 md:px-4'>
                 <div className=''>
                   <img src="https://images.stockcake.com/public/b/0/9/b098bdf5-39e2-4d83-b115-2b5d0e96ad2a_large/geometric-shapes-collection-stockcake.jpg" alt="" className='rounded-lg  h-[11.5rem] w-full' />
                 </div>
@@ -208,7 +209,7 @@ export default function App() {
                   <p className='text-center pt-2 text-md'>We actively participate in community services projects that enrich our student's learning experiences.</p>
                 </div>
               </div>
-              <div className='p-4'>
+              <div className='py-4 md:px-4'>
                 <div className=''>
                   <img src="https://images.stockcake.com/public/0/8/b/08bd7c3a-e795-4736-a176-5b5c74ae95fa_large/study-time-essentials-stockcake.jpg" alt="" className='rounded-lg h-[11.5rem] w-full' />
                 </div>
@@ -225,19 +226,19 @@ export default function App() {
           </div>
         </section>
         {/* Testimonials */}
-        <section className='px-14 pt-10 pb-20 p-'>
+        <section className='px-4 md:px-14 pt-10 pb-20 p-'>
           <div className='flex flex-col'>
             <div className='flex flex-col items-center justify-center'>
               
-              <h2 className='font-bold text-4xl w-1/2 text-center pt-4'>
+              <h2 className='font-bold text-2xl md:text-4xl lg:w-1/2 text-center pt-4'>
                 Trasformative Education Experience
               </h2>
-              <p className='pt-4 text-center w-[70vw] text-balance text-slate-600 '>
+              <p className='pt-4 text-center lg:w-[70vw] text-balance text-slate-600 '>
                 Hear from our students and Parents on the imapct of our school community.
               </p>
             </div>
 
-            <div className='flex gap-6 pt-20'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-20'>
               <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl min-h-5 hover:transition-opacity hover:opacity-70'>
                 <div className='flex gap-4'>
                   <img src="https://images.stockcake.com/public/2/8/8/288e7709-3abf-4d06-bd17-eb681cf9ac51_large/joyful-emoji-ball-stockcake.jpg" alt="" className='h-14 rounded-full object-cover' />
@@ -266,7 +267,7 @@ export default function App() {
                   </p>
                 </div>
               </div>
-              <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl hover:transition-opacity hover:opacity-70'>
+              <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl hover:transition-opacity hover:opacity-70 md:col-span-2 lg:col-span-1'>
                 <div className='flex gap-4'>
                   <img src="https://images.stockcake.com/public/2/8/8/288e7709-3abf-4d06-bd17-eb681cf9ac51_large/joyful-emoji-ball-stockcake.jpg" alt="" className='h-14 rounded-full object-cover' />
                   <p className='flex flex-col text-base text-slate-900'>
@@ -282,7 +283,7 @@ export default function App() {
               </div>
             </div>
 
-            <div className='flex gap-6 pt-6'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-6'>
               <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl hover:transition-opacity hover:opacity-70'>
                 <div className='flex gap-4'>
                   <img src="https://images.stockcake.com/public/2/8/8/288e7709-3abf-4d06-bd17-eb681cf9ac51_large/joyful-emoji-ball-stockcake.jpg" alt="" className='h-14 rounded-full object-cover' />
@@ -311,7 +312,7 @@ export default function App() {
                   </p>
                 </div>
               </div>
-              <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl hover:transition-opacity hover:opacity-70'>
+              <div className='bg-slate-50 shadow-2xl px-5 py-8 rounded-xl hover:transition-opacity hover:opacity-70 md:col-span-2 lg:col-span-1'>
                 <div className='flex gap-4'>
                   <img src="https://images.stockcake.com/public/2/8/8/288e7709-3abf-4d06-bd17-eb681cf9ac51_large/joyful-emoji-ball-stockcake.jpg" alt="" className='h-14 rounded-full object-cover' />
                   <p className='flex flex-col text-base text-slate-900'>
@@ -330,7 +331,7 @@ export default function App() {
           </div>
         </section>
         {/* principal */}
-        <section className='px-14 pt-16 pb-20'>
+        <section className='px-4 md:px-14 pt-16 pb-20'>
           <div className='flex flex-col items-center   justify-center pb-16'>
               <p>📢</p>
               <p className='text-lg text-gray-500 '>
@@ -338,11 +339,11 @@ export default function App() {
               </p>
             </div>
           <div className='relative'>
-            <figure className="md:flex bg-slate-50 shadow-xl rounded-xl p-8 md:p-0">
+            <figure className="md:flex lg:bg-slate-50 hover:bg-slate-100 shadow-xl rounded-xl p-8 md:p-0">
               
-              <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none  rounded-full mx-auto" src="https://images.stockcake.com/public/3/6/9/3692a82b-6994-40d9-ba3a-c64080c60af6_large/man-holding-microphone-stockcake.jpg" alt="" width="384" height="512" />
+              <img className="md:w-48 md:h-auto md:rounded-none  rounded-md w-full h-56 object-cover mx-auto" src="https://images.stockcake.com/public/3/6/9/3692a82b-6994-40d9-ba3a-c64080c60af6_large/man-holding-microphone-stockcake.jpg" alt="" width="384" height="512" />
 
-              <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <div class="pt-6 md:p-8  md:text-left space-y-4">
                 <blockquote>
                   <p class="text-lg font-medium">
                     “Today, I want to take a moment to celebrate our incredible school community. Each one of you students, teachers, and parents plays a vital role in making our school a special place. As we embark on this new academic year, let's remember the values that bind us: respect, curiosity, and perseverance. These qualities not only help us achieve academic success but also foster friendships and a supportive environment. I encourage each student to take advantage of the opportunities available—whether in academics, sports, or the arts. Together, let's create a culture of encouragement and collaboration, where everyone feels valued and inspired. Thank you for being a part of our school family. Let's make this year our best one yet!”
@@ -363,9 +364,9 @@ export default function App() {
         </section>
         
         {/* questions */}
-        <section className='px-14 pt-20 pb-24'>
-          <div className='flex justify-between gap-x-7'>
-            <div className='w-[90%]'>
+        <section className='px-4 md:px-14 pt-20 pb-24'>
+          <div className='flex flex-wrap lg:flex-nowrap justify-between gap-x-7 gap-y-16'>
+            <div className='md:w-[90%] sm:w-full'>
               <p className='text-base font-semibold text-indigo-500'>
                 Frequently asked questions 🙋🏽
               </p>
@@ -373,7 +374,7 @@ export default function App() {
                 Your guide to our School Community
                 </h2>
             </div>
-            <div className='min-w-[50%]'>
+            <div className='min-w-[50%] sm:w-full'>
               <h2 className=' text-sm font-semibold leading-7 text-slate-400'>General</h2>
 
               <dl className="mt-2 divide-y divide-slate-100 ">
@@ -484,9 +485,9 @@ export default function App() {
         </section>
 
         {/* newsletter */}
-        <section className='px-14 pt-10'>
-          <div className='flex gap-10 pb-20'>
-            <div className='w-1/2'>
+        <section className='px-4 md:px-14 pt-10'>
+          <div className='flex flex-wrap lg:flex-nowrap gap-10 pb-20'>
+            <div className='lg:w-1/2 sm:w-full'>
               <h2 class="mb-6 font-bold text-3xl text-gray-800">
                 💌 Subscribe to Adls news
               </h2> 
@@ -497,7 +498,7 @@ export default function App() {
 
 </p>
             </div>
-            <div className='w-1/2 pt-10'>
+            <div className='lg:w-1/2 pt-10 sm:w-full'>
               <div className='ring-1 ring-gray-400 p-2 rounded-md'>
                 <label htmlFor="name"></label>
                 <input type="text" placeholder='First Name'/>
@@ -522,9 +523,9 @@ export default function App() {
         
       </main>
 
-      <footer className="bg-gray-100 px-14 pt-10 mt-2 text-white ">
+      <footer className="bg-gray-100 px-4 md:px-14 pt-10 mt-2 text-white ">
 
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-10 pb-9">
+      <div className="grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-y-6 gap-x-10 pb-9">
               
         <div className="pt-5">
           <h5 className="font-semibold uppercase tracking-tight pb-3
@@ -638,7 +639,7 @@ export default function App() {
       </div>
       <hr className="border border-slate-500 mt-4"/>
 
-      <div className="flex justify-end mt-6 gap-4">
+      <div className="flex md:justify-end mt-6 gap-4">
 
        <div className="h-8 w-8 bg-white shadow-lg rounded-full flex items-center justify-center">
         <svg class="w-4 h-4 text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
